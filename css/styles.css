@@ -1,0 +1,126 @@
+/* цвет акцента #2196F3
+   цвет заголовков #212121
+   цвет текста абзац #757575
+   цвет текста герой #FFFFFF
+   цвет лого #000000
+   цвет контактов в футере с прозрачностью 
+   rgba(255, 255, 255, 0.6)
+   вторичный цвет фона #F5F4FA
+   первичный цвет фона #e5e5e5
+*/
+
+/*общие стили*/
+
+:root {
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+  --tittle-color: #212121;
+  --main-color: #757575;
+  --hero-color: #ffffff;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+  --secondary-background-color: #f5f4fa;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --header-background-color: #ffffff;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--tittle-color);
+}
+
+.web-logo {
+  color: var(--accent-color);
+}
+
+.studio-logo-header {
+  color: var(--logo-color);
+}
+
+.studio-logo-footer {
+  color: var(--hero-color);
+}
+
+.list {
+  list-style: none;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+}
+
+/*блок nav*/
+
+.site-nav .link {
+  color: var(--tittle-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+  color: var(--accent-color);
+}
+
+/*блок contacts*/
+
+.auth-nav .link {
+  color: var(--contacts-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/*блок footer*/
+.map {
+  color: var(--hero-color);
+}
+
+/*стили для файла index.html*/
+
+/*блок hero*/
+
+.headline {
+  color: var(--hero-color);
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--hero-color);
+}
+
+/*блок компания*/
+
+.company-features .desc {
+  color: var(--main-color);
+}
+
+/*блок команда*/
+
+.our-team .desc {
+  color: var(--main-color);
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+/*стили для файла portfolio.html*/
+/*стили для галерея*/
+
+.galery .desc {
+  color: var(--main-color);
+}
+
+.galery-nav .link:hover,
+.galery-nav .link:focus {
+  background-color: var(--accent-color);
+  color: var(--hero-color);
+}
+.galery-nav .link {
+  background-color: var(--secondary-background-color);
+  color: var(--tittle-color);
+}
