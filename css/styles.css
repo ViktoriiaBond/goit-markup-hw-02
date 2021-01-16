@@ -5,11 +5,15 @@
    цвет лого #000000
    цвет контактов в футере с прозрачностью 
    rgba(255, 255, 255, 0.6)
+
    вторичный цвет фона #F5F4FA
    первичный цвет фона #e5e5e5
-*/
 
-/*общие стили*/
+   шрифт заголовков hq-h3 Roboto (700.900)
+   шрифт текста Roboto 400
+   шрифт навигации Roboto 500
+   шрифт лого Raleway 700
+*/
 
 :root {
   --accent-color: #2196f3;
@@ -22,15 +26,26 @@
   --main-background-color: #e5e5e5;
   --footer-background-color: #2f303a;
   --header-background-color: #ffffff;
+  --h-fonts: "Roboto", sans-serif;
+  --main-text-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
 }
 
 body {
   background-color: var(--main-background-color);
   color: var(--tittle-color);
+  font-family: var(--h-fonts);
 }
 
+/*------------общие стили------------*/
 .web-logo {
   color: var(--accent-color);
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .studio-logo-header {
@@ -43,76 +58,156 @@ body {
 
 .list {
   list-style: none;
+  text-decoration: none;
 }
 
-footer {
+.footer {
   background-color: var(--footer-background-color);
 }
 
-header {
+.header {
   background-color: var(--header-background-color);
 }
 
-/*блок nav*/
+.secondary-headers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*-------------конец общие стили---------------*/
+
+/*-----------блок nav--------------------------*/
 
 .site-nav .link {
   color: var(--tittle-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
   color: var(--accent-color);
 }
+/*------------конец блок nav-----------------------*/
 
-/*блок contacts*/
+/*-----------блок contacts-------------------------*/
 
 .auth-nav .link {
   color: var(--contacts-color);
+  font-style: normal;
 }
+
+.auth-nav .link-header {
+  color: var(--main-color);
+}
+
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus,
+.auth-nav .link-header:hover,
+.auth-nav .link-header:focus,
+.map:hover,
+.map:focus {
   color: var(--accent-color);
 }
 
-/*блок footer*/
+/*-------конец блок contacts----------------------*/
+
+/*--------блок footer-----------------------------*/
 .map {
   color: var(--hero-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
+/*--------конец блок footer-----------------------*/
 
-/*стили для файла index.html*/
+/*=======стили для файла index.html===============*/
 
-/*блок hero*/
+/*--------------блок hero-------------------------*/
 
-.headline {
+.main-header {
   color: var(--hero-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
   background-color: var(--accent-color);
   color: var(--hero-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
+/*-----------конец блок hero-----------------------*/
 
-/*блок компания*/
+/*-----------блок компания------------------------*/
 
 .company-features .desc {
   color: var(--main-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
-/*блок команда*/
+.company-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/*-----------конец блок компания------------------*/
+
+/*-------------блок команда-----------------------*/
 
 .our-team .desc {
   color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+}
+
+.team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
 }
 
 .team {
   background-color: var(--secondary-background-color);
 }
 
-/*стили для файла portfolio.html*/
-/*стили для галерея*/
+/*------------конец блок команда------------------*/
+
+/*=======конец стили для файла index.html=========*/
+
+/*===========стили для файла portfolio.html=======*/
+/*----------стили для галерея---------------------*/
 
 .galery .desc {
   color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
 }
 
 .galery-nav .link:hover,
@@ -123,4 +218,16 @@ header {
 .galery-nav .link {
   background-color: var(--secondary-background-color);
   color: var(--tittle-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
 }
+.galery-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+/*---------конец стили для галерея----------------*/
+/*======конец стили для файла portfolio.html======*/
