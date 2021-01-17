@@ -102,10 +102,17 @@ body {
 .auth-nav .link {
   color: var(--contacts-color);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
 .auth-nav .link-header {
   color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -210,12 +217,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.galery-nav .link:hover,
-.galery-nav .link:focus {
+.galery-nav .galery-button:hover,
+.galery-nav .galery-button:focus {
   background-color: var(--accent-color);
   color: var(--hero-color);
 }
-.galery-nav .link {
+.galery-nav .galery-button {
   background-color: var(--secondary-background-color);
   color: var(--tittle-color);
   font-weight: 500;
