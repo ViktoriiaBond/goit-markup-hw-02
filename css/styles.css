@@ -39,6 +39,14 @@ body {
 
 /*------------общие стили------------*/
 .web-logo {
+  /*------------проверить!!------------*/
+  display: block;
+  margin-left: 215px;
+  margin-right: 50px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  /*------------проверить!!------------*/
+
   color: var(--accent-color);
   font-family: var(--logo-font);
   font-weight: 700;
@@ -90,14 +98,39 @@ body {
   text-decoration: none;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  height: 80px;
+  align-items: center;
+}
+
+.site-nav,
+.auth-nav {
+  display: flex;
+  height: 80px;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.site-nav .site-nav-links {
+  margin-left: 43px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
   color: var(--accent-color);
 }
+
 /*------------конец блок nav-----------------------*/
 
-/*-----------блок contacts-------------------------*/
+/*-----------блок contacts footer--------------------*/
 
 .auth-nav .link {
   color: var(--contacts-color);
@@ -108,6 +141,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*-----------блок contacts header------------------*/
 .auth-nav .link-header {
   color: var(--main-color);
   font-weight: 500;
@@ -116,6 +150,16 @@ body {
   letter-spacing: 0.02em;
 }
 
+.auth-nav .auth-nav-links:not(:first-child) {
+  margin-left: 50px;
+  margin-right: 215px;
+}
+
+.auth-nav .auth-nav-links {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+/*-----------блок contacts all-------------------*/
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .auth-nav .link-header:hover,
