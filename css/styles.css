@@ -44,7 +44,7 @@ ul {
 .flex {
   /*------------проверить!!------------*/
   display: block;
-  margin-left: 215px;
+
   margin-right: 50px;
   margin-top: 24px;
   margin-bottom: 25px;
@@ -106,8 +106,10 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1600px;
+  width: 1170px;
   height: 80px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 .site-nav,
@@ -161,7 +163,6 @@ ul {
 
 .auth-nav .auth-nav-links:not(:first-child) {
   margin-left: 50px;
-  margin-right: 215px;
 }
 
 .auth-nav .auth-nav-links {
