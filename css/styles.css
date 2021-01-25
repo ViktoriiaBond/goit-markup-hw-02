@@ -36,10 +36,7 @@ body {
   color: var(--tittle-color);
   font-family: var(--h-fonts);
 }
-ul {
-  padding: 0px;
-  margin: 0px;
-}
+
 /*------------общие стили------------*/
 .flex {
   /*------------проверить!!------------*/
@@ -69,6 +66,9 @@ ul {
 }
 
 .list {
+  padding: 0px;
+  margin: 0px;
+
   list-style: none;
   text-decoration: none;
 }
@@ -82,6 +82,10 @@ ul {
 }
 
 .secondary-headers {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -89,6 +93,26 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.deleted-header {
+  display: none;
+}
 /*-------------конец общие стили---------------*/
 
 /*-----------блок nav--------------------------*/
@@ -102,24 +126,13 @@ ul {
   text-decoration: none;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1170px;
-  height: 80px;
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
 .site-nav,
 .auth-nav {
   display: flex;
-  height: 80px;
 }
 .nav {
   display: flex;
-  height: 80px;
+
   align-items: center;
 }
 .site-nav .site-nav-links {
@@ -137,9 +150,7 @@ ul {
 /*------------конец блок nav-----------------------*/
 
 /*-----------блок contacts footer--------------------*/
-.indents {
-  margin-left: 215px;
-}
+
 .auth-nav-footer .link {
   color: var(--contacts-color);
   font-style: normal;
@@ -149,7 +160,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .address {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 /*-----------блок contacts header------------------*/
@@ -200,18 +211,21 @@ ul {
   text-align: center;
 }
 .main-header {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   color: var(--hero-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button {
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
 
   background-color: var(--accent-color);
   color: var(--hero-color);
@@ -228,13 +242,14 @@ ul {
   display: flex;
   justify-content: center;
 
-  width: 1170px;
-  height: 101px;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin: 0px auto;
 }
 
+.about-company {
+  padding-bottom: 94px;
+}
 .company-features .desc {
+  margin: 0px 0px;
   color: var(--main-color);
   font-weight: 400;
   font-size: 14px;
@@ -245,6 +260,8 @@ ul {
 .company-header {
   font-weight: 700;
   font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -266,10 +283,8 @@ ul {
 .our-team {
   display: flex;
   justify-content: center;
-
-  width: 1170px;
-  margin-left: 215px;
-  margin-right: 215px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .our-work-lists .work-list:not(:last-child) {
@@ -284,6 +299,8 @@ ul {
   margin-right: 30px;
 }
 .our-team .desc {
+  margin: 0px;
+
   color: var(--main-color);
   font-weight: 400;
   font-size: 16px;
@@ -292,6 +309,9 @@ ul {
 }
 
 .team-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -310,6 +330,8 @@ ul {
 /*----------стили для галерея---------------------*/
 
 .galery .desc {
+  margin: 0px;
+  padding: 0px 24px;
   color: var(--main-color);
   font-weight: 400;
   font-size: 16px;
@@ -322,8 +344,10 @@ ul {
   background-color: var(--accent-color);
   color: var(--hero-color);
 }
-.galery-nav .galery-button {
-  height: 38px;
+.galery-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
 
   background-color: var(--secondary-background-color);
   color: var(--tittle-color);
@@ -333,6 +357,9 @@ ul {
   letter-spacing: 0.03em;
 }
 .galery-header {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding: 0px 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -348,9 +375,6 @@ ul {
 .galery {
   display: flex;
   justify-content: center;
-  margin-left: 215px;
-  margin-right: 215px;
-  width: 1170px;
 }
 .galery {
   flex-wrap: wrap;
